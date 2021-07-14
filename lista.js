@@ -21,7 +21,8 @@ var arr = [
 ['GreatImmortal/cap-331.html', 'capitulo 331'],
 ['GreatImmortal/cap-332.html', 'capitulo 332'],
 ['GreatImmortal/cap-333.html', 'capitulo 333'],
-['GreatImmortal/cap-334.html', 'capitulo 334']];
+['GreatImmortal/cap-334.html', 'capitulo 334'],
+['GreatImmortal/cap-335.html', 'capitulo 335']];
 
 
 
