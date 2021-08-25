@@ -3,6 +3,7 @@ const lista = document.getElementById('lista');
 
 
 var arr = [
+['GreatImmortal/cap-353.html', 'capitulo 353'],  
 ['GreatImmortal/cap-352.html', 'capitulo 352'],   
 ['GreatImmortal/cap-351.html', 'capitulo 351'],
 ['GreatImmortal/cap-350.html', 'capitulo 350'],
