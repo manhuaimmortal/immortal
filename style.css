@@ -5,6 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: rgb(242, 253, 253);
+}
 
 #lista{
     list-style: none;
@@ -27,6 +30,7 @@
 }
 
 .contenedor{
+    
     width: 60%;
     text-align:0 center;
     margin: 0 auto;
@@ -39,6 +43,52 @@
     text-align: center;
     height:300px; 
     overflow: scroll;
+}
+.contenedor-general  a{
+    
+    color: rgb(19, 18, 17);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.volver{
+    color: rgb(19, 18, 17);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    
+
+    
+    padding: 20px;
+    
+}
+
+.volver a{
+    background-color: rgb(46, 161, 255);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.contenedor-general{
+    display: flex;
+    width: 40%;
+    padding-top: 30px;
+    text-align:0 center;
+    margin: 0 auto;
+    
+}
+
+.img-manhua-contenedor{
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+}
+.img-manhua-contenedor img{
+    width: 100%;
 }
 
 .botones{
@@ -72,13 +122,13 @@
 
 
 .img-manhua{
-    width: 50%;
+    width: 25%;
     margin: auto;
     text-align: center;
 }
 
 .img-manhua img{
-    width: 40%;
+    width: 100%;
 }
 
 

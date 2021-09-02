@@ -1,4 +1,4 @@
-let ultimo=356;
+let ultimo=46;
 
 
 
@@ -34,8 +34,8 @@ while(contador<=pag){
 
 function agregaBotones(){
     const contenedorBotones=document.querySelector('.botones');
-    if(numero==316){
-        var ir='../immortal.html'
+    if(numero==44){
+        var ir='../an-urban-cultivation-frenzy.html'
         var textobtn='caps'
     }else{
         var ir='cap-'+menos+'.html'
@@ -54,7 +54,7 @@ function agregaBotones(){
 
 
     const menu= document.createElement('a');
-    menu.href='../immortal.html';
+    menu.href='../an-urban-cultivation-frenzy.html';
     menu.textContent='caps';
     menu.classList.add('btn-link');
     contenedorBotones.appendChild(menu);
