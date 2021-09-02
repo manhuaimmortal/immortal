@@ -171,6 +171,27 @@ body{
         width: 90%;
         margin: auto;
     }
+
+
+    .contenedor-general{
+        display: block;
+        width: 80%;
+        padding-top: 30px;
+        text-align:0 center;
+        margin: 0 auto;
+        
+    }
+    
+    .img-manhua-contenedor{
+        width: 100%;
+        margin: auto;
+        padding: 8px;
+        text-align: center;
+    }
+    .img-manhua-contenedor img{
+        width: 100%;
+    }
+
     
     
 }
