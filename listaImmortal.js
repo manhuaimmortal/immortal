@@ -3,6 +3,7 @@ const lista = document.getElementById('lista');
 
 
 var arr = [
+['GreatImmortal/cap-357.html', 'capitulo 357'], 
 ['GreatImmortal/cap-356.html', 'capitulo 356'], 
 ['GreatImmortal/cap-355.html', 'capitulo 355'], 
 ['GreatImmortal/cap-354.html', 'capitulo 354'], 
@@ -67,4 +68,5 @@ function creaElementos(ite) {
     elem.classList.add('item');
     elem.appendChild(ite);
     lista.appendChild(elem);
+    
 }

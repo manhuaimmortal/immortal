@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(242, 253, 253);
+    background-color: rgb(9, 14, 33);
 }
 
 #lista{
@@ -22,7 +22,8 @@ body{
 .cap-link{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    background-color: rgb(46, 161, 255);
+    background-color: transparent;
+    border: 1px solid rgb(107, 110, 122);
     margin: 14px;
     padding: 5px;
     border-radius: 6px;
@@ -39,14 +40,16 @@ body{
    
 }
 .conteiner{
+
     margin: auto;
     text-align: center;
     height:300px; 
     overflow: scroll;
+    
 }
 .contenedor-general  a{
     
-    color: rgb(19, 18, 17);
+    color: rgb(123, 129, 177);
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
@@ -65,19 +68,27 @@ body{
 }
 
 .volver a{
-    background-color: rgb(46, 161, 255);
-    padding: 20px;
     color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(107, 110, 122);
+    padding: 20px;
+    margin-top: 5px;
+    
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+    border-radius: 5px;
 }
 .contenedor-general{
     display: flex;
     width: 40%;
     padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align:0 center;
     margin: 0 auto;
+    background-color: rgb(18, 24, 50);
+    color: rgb(123, 129, 177);
     
 }
 
@@ -86,9 +97,12 @@ body{
     margin: auto;
     padding: 8px;
     text-align: center;
+    
 }
 .img-manhua-contenedor img{
     width: 100%;
+    border-radius: 15px;
+    padding-bottom: 15px;
 }
 
 .botones{
@@ -97,6 +111,7 @@ body{
     width: 60%;
     text-align: center;
     margin: auto;
+    
 
 }
 
@@ -105,7 +120,8 @@ body{
     font-size: 25px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    background-color: rgb(46, 161, 255);
+    background-color: transparent;
+    border: 1px solid rgb(107, 110, 122);
     border-radius: 6px;
     padding: 7px 15px;
 }
@@ -125,10 +141,15 @@ body{
     width: 25%;
     margin: auto;
     text-align: center;
+    color: rgb(123, 129, 177);
+    background-color: rgb(18, 24, 50);
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .img-manhua img{
     width: 100%;
+    border-radius: 15px;
 }
 
 
@@ -179,6 +200,9 @@ body{
         padding-top: 30px;
         text-align:0 center;
         margin: 0 auto;
+        background-color: rgb(18, 24, 50);
+        color: rgb(123, 129, 177);
+    
         
     }
     
