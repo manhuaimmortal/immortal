@@ -3,6 +3,10 @@ const lista = document.getElementById('lista');
 
 
 var arr = [
+['an-urban-cultivation-frenzy/cap-53.html', 'capitulo 53'], 
+['an-urban-cultivation-frenzy/cap-52.html', 'capitulo 52'], 
+['an-urban-cultivation-frenzy/cap-51.html', 'capitulo 51'], 
+['an-urban-cultivation-frenzy/cap-50.html', 'capitulo 50'],     
 ['an-urban-cultivation-frenzy/cap-49.html', 'capitulo 49'], 
 ['an-urban-cultivation-frenzy/cap-48.html', 'capitulo 48'],     
 ['an-urban-cultivation-frenzy/cap-47.html', 'capitulo 47'],    
