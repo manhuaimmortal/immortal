@@ -1,78 +1,246 @@
+const contenedor= document.querySelector(".conteiner");
+const inicio=document.querySelector(".img-manhua");
 
-const lista = document.getElementById('lista');
+const imagenes=document.querySelector(".imagenes");
+const contBotones=document.querySelector(".botones");
+imagenes.classList.add("contenedor")
 
-
+let capitulo=0
 var arr = [
-['GreatImmortal/cap-363.html', 'capitulo 363'],  
-['GreatImmortal/cap-362.html', 'capitulo 362'],     
-['GreatImmortal/cap-361.html', 'capitulo 361'], 
-['GreatImmortal/cap-360.html', 'capitulo 360'],      
-['GreatImmortal/cap-359.html', 'capitulo 359'],     
-['GreatImmortal/cap-358.html', 'capitulo 358'], 
-['GreatImmortal/cap-357.html', 'capitulo 357'], 
-['GreatImmortal/cap-356.html', 'capitulo 356'], 
-['GreatImmortal/cap-355.html', 'capitulo 355'], 
-['GreatImmortal/cap-354.html', 'capitulo 354'], 
-['GreatImmortal/cap-353.html', 'capitulo 353'],  
-['GreatImmortal/cap-352.html', 'capitulo 352'],   
-['GreatImmortal/cap-351.html', 'capitulo 351'],
-['GreatImmortal/cap-350.html', 'capitulo 350'],
-['GreatImmortal/cap-349.html', 'capitulo 349'],
-['GreatImmortal/cap-348.html', 'capitulo 348'],    
-['GreatImmortal/cap-347.html', 'capitulo 347'],  
-['GreatImmortal/cap-346.html', 'capitulo 346'],    
-['GreatImmortal/cap-345.html', 'capitulo 345'],
-['GreatImmortal/cap-344.html', 'capitulo 344'],
-['GreatImmortal/cap-343.html', 'capitulo 343'],    
-['GreatImmortal/cap-342.html', 'capitulo 342'],  
-['GreatImmortal/cap-341.html', 'capitulo 341'],    
-['GreatImmortal/cap-340.html', 'capitulo 340'],
-['GreatImmortal/cap-339.html', 'capitulo 339'],
-['GreatImmortal/cap-338.html', 'capitulo 338'],
-['GreatImmortal/cap-337.html', 'capitulo 337'],
-['GreatImmortal/cap-336.html', 'capitulo 336'],
-['GreatImmortal/cap-335.html', 'capitulo 335'],
-['GreatImmortal/cap-334.html', 'capitulo 334'],
-['GreatImmortal/cap-333.html', 'capitulo 333'],
-['GreatImmortal/cap-332.html', 'capitulo 332'],
-['GreatImmortal/cap-331.html', 'capitulo 331'],
-['GreatImmortal/cap-330.html', 'capitulo 330'],
-['GreatImmortal/cap-329.html', 'capitulo 329'],
-['GreatImmortal/cap-328.html', 'capitulo 328'],
-['GreatImmortal/cap-327.html', 'capitulo 327'],
-['GreatImmortal/cap-326.html', 'capitulo 326'],
-['GreatImmortal/cap-325.html', 'capitulo 325'],
-['GreatImmortal/cap-324.html', 'capitulo 324'],
-['GreatImmortal/cap-323.html', 'capitulo 323'],
-['GreatImmortal/cap-322.html', 'capitulo 322'],
-['GreatImmortal/cap-321.html', 'capitulo 321'],
-['GreatImmortal/cap-320.html', 'capitulo 320'],
-['GreatImmortal/cap-319.html', 'capitulo 319'],
-['GreatImmortal/cap-318.html', 'capitulo 318'],
-['GreatImmortal/cap-317.html', 'capitulo 317'],
-['GreatImmortal/cap-316.html', 'capitulo 316']];
+['32', 'capitulo 364'],      
+['33', 'capitulo 363'],      
+['32', 'capitulo 362'],     
+['31', 'capitulo 361'],    
+['33', 'capitulo 360'],
+['29', 'capitulo 359'],    
+['32', 'capitulo 358'],   
+['30', 'capitulo 357'], 
+['27', 'capitulo 356'], 
+['33', 'capitulo 355'], 
+['31', 'capitulo 354'], 
+['32', 'capitulo 353'],  
+['28', 'capitulo 352'],   
+['24', 'capitulo 351'],
+['31', 'capitulo 350'],
+['28', 'capitulo 349'],
+['30', 'capitulo 348'],    
+['28', 'capitulo 347'],  
+['27', 'capitulo 346'],    
+['29', 'capitulo 345'],
+['30', 'capitulo 344'],
+['29', 'capitulo 343'],    
+['28', 'capitulo 342'],  
+['29', 'capitulo 341'],    
+['31', 'capitulo 340'],
+['32', 'capitulo 339'],
+['32', 'capitulo 338'],
+['32', 'capitulo 337'],
+['30', 'capitulo 336'],
+['32', 'capitulo 335'],
+['24', 'capitulo 334'],
+['29', 'capitulo 333'],
+['24', 'capitulo 332'],
+['30', 'capitulo 331'],
+['26', 'capitulo 330'],
+['29', 'capitulo 329'],
+['28', 'capitulo 328'],
+['27', 'capitulo 327'],
+['34', 'capitulo 326'],
+['30', 'capitulo 325'],
+['30', 'capitulo 324'],
+['28', 'capitulo 323'],
+['26', 'capitulo 322'],
+['31', 'capitulo 321'],
+['29', 'capitulo 320'],
+['27', 'capitulo 319'],
+['32', 'capitulo 318'],
+['31', 'capitulo 317'],
+['29', 'capitulo 316']];
 
 
 
 
 
 arr.forEach(element => {
-    creaLink(element[0], element[1]);
+  
+   crearBotones(element[1]);
 })
 
-function creaLink(href, texto) {
-    const lin = document.createElement('a');
-    lin.classList.add('cap-link');
-    lin.href = href;
-    lin.textContent = texto;
 
-    creaElementos(lin);
+function crearBotones(btn){
+    const boton= document.createElement("BUTTON");
+    boton.innerHTML=btn;
+    boton.classList.add("item")
+    boton.classList.add("btn-link");
+    contenedor.appendChild(boton);
+
+    const espacio=document.createElement("BR");
+    contenedor.appendChild(espacio);
+
+    boton.addEventListener("click",(e)=>{
+        let texto=e.target.firstChild.nodeValue;
+        let cadena=texto.split(" ")
+        
+        
+        
+        padre = contenedor.parentNode;
+        padre.removeChild(contenedor);
+        padre = inicio.parentNode;
+        padre.removeChild(inicio);
+        let canPagina;
+        arr.forEach(e=>{
+            if(e[1].indexOf(cadena[1])>-1){
+                
+                canPagina=e[0];
+              
+            }
+            
+        });   
+        capitulo=cadena[1];
+
+        
+        cargarImagenes(capitulo,canPagina);
+
+        
+        
+            
+        
+    });
 }
 
-function creaElementos(ite) {
-    let elem = document.createElement('li');
-    elem.classList.add('item');
-    elem.appendChild(ite);
-    lista.appendChild(elem);
+function cargarImagenes(num,pag){
+    capitulo=num.toString();
+    let capAtras= parseInt(capitulo,10)-1;
+    let capAdelante= parseInt(capitulo,10)+1;
+    let pagAtras=0;
+    let pagAdelante=0;
     
+
+    arr.forEach(e=>{
+            if(e[1].indexOf(capAtras)>-1){
+                
+                pagAtras=e[0];
+              
+            }
+            if(e[1].indexOf(capAdelante)>-1){
+                
+                pagAdelante=e[0];
+              
+            }
+            
+        });   
+
+        
+     botonDer(capAtras,pagAtras,capAdelante,pagAdelante);
+
+
+
+    
+    let contador=0;
+    let numero=String(num);
+    
+    while(contador<=pag){
+        const imagen=document.createElement('img');
+        imagen.src='./img/'+numero+'/'+contador+'.jpg';
+        imagen.classList.add('paginas');
+        imagenes.appendChild(imagen);
+
+      
+        contador++;
+    }
+}
+
+
+function botonDer(atras,pAtras, adelante,pAdelante){
+    
+    const contenedorBotones=document.querySelector('.botones');
+    const contenedorBotones2=document.querySelector('.botones2');
+    while (contenedorBotones.firstChild){
+        contenedorBotones.removeChild(contenedorBotones.firstChild);
+      };
+
+      while (contenedorBotones2.firstChild){
+        contenedorBotones2.removeChild(contenedorBotones2.firstChild);
+      };  
+
+    if(pAtras!=0){
+        const boton2= document.createElement("BUTTON");
+        boton2.innerHTML="<"+atras;
+        boton2.classList.add("btn-link");
+        contenedorBotones.appendChild(boton2);
+        boton2.addEventListener("click", (e)=>{
+            const pag=document.querySelectorAll(".paginas");
+            
+            for(ele of pag){
+                padre = ele.parentElement;
+                padre.removeChild(ele);
+                
+            }
+
+        
+            cargarImagenes(atras,pAtras);
+        })        
+    }    
+
+
+    if(pAtras!=0){
+        const boton3= document.createElement("BUTTON");
+        boton3.innerHTML="<"+atras;
+        boton3.classList.add("btn-link");
+        contenedorBotones2.appendChild(boton3);
+        boton3.addEventListener("click", (e)=>{
+            const pag=document.querySelectorAll(".paginas");
+            
+            for(ele of pag){
+                padre = ele.parentElement;
+                padre.removeChild(ele);
+                
+            }
+
+        
+            cargarImagenes(atras,pAtras);
+        })        
+    }
+
+
+
+    if(pAdelante!=0){
+        const boton1= document.createElement("BUTTON");
+        boton1.classList.add("btn-link");
+        boton1.innerHTML=adelante+">";
+        contenedorBotones.appendChild(boton1);
+        boton1.addEventListener("click", (e)=>{
+            const pag=document.querySelectorAll(".paginas");
+            
+            for(ele of pag){
+                padre = ele.parentElement;
+                padre.removeChild(ele);
+                
+            }
+
+        
+            cargarImagenes(adelante,pAdelante);
+        })
+    }
+    if(pAdelante!=0){
+        const boton4= document.createElement("BUTTON");
+        boton4.classList.add("btn-link");
+        boton4.innerHTML=adelante+">";
+        contenedorBotones2.appendChild(boton4);
+        boton4.addEventListener("click", (e)=>{
+            const pag=document.querySelectorAll(".paginas");
+            
+            for(ele of pag){
+                padre = ele.parentElement;
+                padre.removeChild(ele);
+                
+            }
+
+        
+            cargarImagenes(adelante,pAdelante);
+        })
+    }
+    
+    //interval();
+   
 }

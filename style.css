@@ -115,6 +115,16 @@ body{
 
 }
 
+.botones2{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    
+
+}
+
 .btn-link{
     text-decoration: none;
     font-size: 25px;
