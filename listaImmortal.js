@@ -7,6 +7,7 @@ imagenes.classList.add("contenedor")
 
 let capitulo=0
 var arr = [
+['36', 'capitulo 365'],       
 ['32', 'capitulo 364'],      
 ['33', 'capitulo 363'],      
 ['32', 'capitulo 362'],     
@@ -55,7 +56,11 @@ var arr = [
 ['27', 'capitulo 319'],
 ['32', 'capitulo 318'],
 ['31', 'capitulo 317'],
-['29', 'capitulo 316']];
+['29', 'capitulo 316'],
+['27', 'capitulo 315'],
+['28', 'capitulo 314'],
+['26', 'capitulo 313'],
+['30', 'capitulo 312']];
 
 
 
