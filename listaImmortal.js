@@ -1,6 +1,7 @@
 const contenedor= document.querySelector(".conteiner");
 const inicio=document.querySelector(".img-manhua");
 
+
 const imagenes=document.querySelector(".imagenes");
 const contBotones=document.querySelector(".botones");
 imagenes.classList.add("contenedor")
