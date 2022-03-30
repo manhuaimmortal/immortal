@@ -1,3 +1,4 @@
+
 const contenedor= document.querySelector(".conteiner");
 const inicio=document.querySelector(".img-manhua");
 
@@ -7,6 +8,10 @@ const contBotones=document.querySelector(".botones");
 imagenes.classList.add("contenedor")
 
 let capitulo=0
+var contador=0;
+var paginasT=0; //paginas totales
+var pagCargas=0
+var disponible=false;
 var arr = [
 ['26', 'capitulo 425'],
 ['26', 'capitulo 424'],
@@ -124,7 +129,25 @@ var arr = [
 ['30', 'capitulo 312']];
 
 
+window.onscroll= function(e){
+    
 
+    if((window.innerHeight+window.pageYOffset) >= document.body.offsetHeight){
+        
+        pagCargas=contador+2;
+        
+        while(contador<=paginasT && contador <= pagCargas && disponible ){
+            const imagen=document.createElement('img');
+            imagen.src='./img/immortal/'+capitulo+'/'+contador+'.jpg';
+            imagen.classList.add('paginas');
+            imagenes.appendChild(imagen);
+            
+            
+            contador++;
+        }
+        
+    }
+}
 
 
 arr.forEach(element => {
@@ -164,7 +187,9 @@ function crearBotones(btn){
         });   
         capitulo=cadena[1];
 
+        paginasT=canPagina;
         
+        disponible=true;
         cargarImagenes(capitulo,canPagina);
 
         
@@ -175,6 +200,7 @@ function crearBotones(btn){
 }
 
 function cargarImagenes(num,pag){
+    
     capitulo=num.toString();
     let capAtras= parseInt(capitulo,10)-1;
     let capAdelante= parseInt(capitulo,10)+1;
@@ -202,12 +228,13 @@ function cargarImagenes(num,pag){
 
 
     
-    let contador=0;
-    let numero=String(num);
     
-    while(contador<=pag){
+    let numero=String(num);
+    capitulo=numero;
+    while(contador<=0){
+        
         const imagen=document.createElement('img');
-        imagen.src='./img/'+numero+'/'+contador+'.jpg';
+        imagen.src='./img/immortal/'+numero+'/'+contador+'.jpg';
         imagen.classList.add('paginas');
         imagenes.appendChild(imagen);
 
@@ -243,8 +270,12 @@ function botonDer(atras,pAtras, adelante,pAdelante){
                 
             }
 
-        
+             capitulo=0;
+             contador=0;
+             paginasT=pAtras;
+             pagCargas=0;
             cargarImagenes(atras,pAtras);
+            
         })        
     }    
 
@@ -263,7 +294,10 @@ function botonDer(atras,pAtras, adelante,pAdelante){
                 
             }
 
-        
+             capitulo=0;
+             contador=0;
+             paginasT=pAtras;
+             pagCargas=0;
             cargarImagenes(atras,pAtras);
         })        
     }
@@ -284,7 +318,10 @@ function botonDer(atras,pAtras, adelante,pAdelante){
                 
             }
 
-        
+             capitulo=0;
+             contador=0;
+             paginasT=pAdelante;
+             pagCargas=0;
             cargarImagenes(adelante,pAdelante);
         })
     }
@@ -302,7 +339,10 @@ function botonDer(atras,pAtras, adelante,pAdelante){
                 
             }
 
-        
+            capitulo=0;
+             contador=0;
+             paginasT=pAdelante;
+             pagCargas=0;
             cargarImagenes(adelante,pAdelante);
         })
     }

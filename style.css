@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 1px;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +95,7 @@ body{
 .img-manhua-contenedor{
     width: 100%;
     margin: auto;
-    padding: 8px;
+    padding: 3px;
     text-align: center;
     
 }
@@ -184,7 +184,7 @@ body{
     .botones{
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
         text-align: center;
         margin: auto;
     }
@@ -196,7 +196,7 @@ body{
     }
     
     .img-manhua img{
-        width: 80%;
+        width: 100%;
     }
     .img-manhua p{
         width: 90%;
@@ -207,7 +207,7 @@ body{
     .contenedor-general{
         display: block;
         width: 80%;
-        padding-top: 30px;
+        
         text-align:0 center;
         margin: 0 auto;
         background-color: rgb(18, 24, 50);
@@ -219,7 +219,7 @@ body{
     .img-manhua-contenedor{
         width: 100%;
         margin: auto;
-        padding: 8px;
+       
         text-align: center;
     }
     .img-manhua-contenedor img{
