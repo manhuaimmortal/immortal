@@ -13,6 +13,7 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 var arr = [
+['28', 'capitulo 429'],
 ['21', 'capitulo 428'],
 ['32', 'capitulo 427'],
 ['27', 'capitulo 426'],
