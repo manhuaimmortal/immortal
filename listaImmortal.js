@@ -13,6 +13,8 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 var arr = [
+['34', 'capitulo 439'],
+['27', 'capitulo 438'],
 ['34', 'capitulo 437'],
 ['32', 'capitulo 436'],
 ['24', 'capitulo 435'],
