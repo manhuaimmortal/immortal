@@ -13,6 +13,9 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 var arr = [
+['19', 'capitulo 456'],
+['24', 'capitulo 455'],
+['22', 'capitulo 454'],
 ['17', 'capitulo 453'],
 ['24', 'capitulo 452'],
 ['22', 'capitulo 451'],
