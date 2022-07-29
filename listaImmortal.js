@@ -13,6 +13,10 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 var arr = [
+['27', 'capitulo 464'],
+['22', 'capitulo 463'],
+['35', 'capitulo 462'],
+['24', 'capitulo 461'],
 ['23', 'capitulo 460'],
 ['28', 'capitulo 459'],
 ['19', 'capitulo 458'],
