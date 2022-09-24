@@ -13,6 +13,10 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 var arr = [
+['21', 'capitulo 487'],
+['31', 'capitulo 486'],
+['27', 'capitulo 485'],
+['27', 'capitulo 484'],
 ['28', 'capitulo 483'],
 ['24', 'capitulo 482'],
 ['24', 'capitulo 481'],
