@@ -12,6 +12,7 @@ var contador=0;
 var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
+
 var arr = [
 ['24', 'capitulo 517'],
 ['21', 'capitulo 516'],
