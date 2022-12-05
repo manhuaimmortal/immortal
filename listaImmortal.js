@@ -13,6 +13,9 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 var arr = [
+['24', 'capitulo 517'],
+['21', 'capitulo 516'],
+['28', 'capitulo 515'],
 ['28', 'capitulo 514'],
 ['31', 'capitulo 513'],
 ['26', 'capitulo 512'],
