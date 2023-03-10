@@ -14,6 +14,11 @@ var pagCargas=0
 var disponible=false;
 
 var arr = [
+['30', 'capitulo 554'],
+['23', 'capitulo 553'],
+['26', 'capitulo 552'],
+['29', 'capitulo 551'],
+['30', 'capitulo 550'],
 ['26', 'capitulo 549'],
 ['27', 'capitulo 548'],
 ['28', 'capitulo 547'],
