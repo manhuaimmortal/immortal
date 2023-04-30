@@ -14,6 +14,10 @@ var pagCargas=0
 var disponible=false;
 
 var arr = [
+['25', 'capitulo 575'],
+['26', 'capitulo 574'],
+['29', 'capitulo 573'],
+['33', 'capitulo 572'],
 ['27', 'capitulo 571'],
 ['29', 'capitulo 570'],
 ['27', 'capitulo 569'],
