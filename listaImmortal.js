@@ -13,6 +13,7 @@ var paginasT=0; //paginas totales
 var pagCargas=0
 var disponible=false;
 
+
 var arr = [
 ['26', 'capitulo 590'],
 ['25', 'capitulo 589'],
