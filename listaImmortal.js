@@ -15,6 +15,7 @@ var disponible=false;
 
 
 var arr = [
+['29', 'capitulo 610'],
 ['37', 'capitulo 609'],
 ['32', 'capitulo 608'],
 ['28', 'capitulo 607'],
