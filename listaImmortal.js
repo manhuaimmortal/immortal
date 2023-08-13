@@ -15,6 +15,12 @@ var disponible=false;
 
 
 var arr = [
+['24', 'capitulo 618'],
+['26', 'capitulo 617'],
+['33', 'capitulo 616'],
+['31', 'capitulo 615'],
+['30', 'capitulo 614'],
+['33', 'capitulo 613'],
 ['28', 'capitulo 612'],
 ['36', 'capitulo 611'],
 ['29', 'capitulo 610'],
